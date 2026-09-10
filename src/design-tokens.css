@@ -1,0 +1,31 @@
+
+:root {
+
+  /* Fixed width of the phone page: every phone interface is 390px wide / 手机页面的固定宽度：所有手机界面宽度都是 390px */
+  --mobile-width: 390px;
+  /* Space between page content and the left or right edge: 24px / 页面内容与左右边缘之间的距离：24px */
+  --space-page: 24px;
+ /* Space below the shared page header: 18px / 共用页面顶部栏下方的间距：18px */
+  --space-section: 18px;
+  
+  /* Main purple used for highlighted text such as names and Talk labels / 主要紫色：用于姓名、Talk 标签等需要突出的文字 */
+  --color-primary: #5354b8;
+
+  /* Main dark text color used by page titles and normal important text / 主要深色文字：用于页面标题和普通重要文字 */
+  --color-text: #202033;
+  /* Secondary gray text color used by dates, times, and supporting information / 次要灰色文字：用于日期、时间和补充说明 */
+  --color-muted: #6e6e80;
+  
+  /* Corner radius of PageShell pages: 28px makes the outer corners rounded / PageShell 页面的圆角半径：28px 用来把页面外框变成圆角 */
+  --radius-phone: 28px;
+
+  /* Shadow around the phone frame: 24px downward, 70px blur, and a light purple color / 手机外框阴影：向下 24px、模糊 70px，并使用很淡的紫色 */
+  --shadow-phone: 0 24px 70px rgba(69, 70, 168, .14);
+
+  /* Font size of the shared page title in Header: 23px / Header 共用页面标题的字号：23px */
+  --font-title-md: 23px;
+
+  /* Height of the fixed bottom navigation bar: 74px / 固定在页面底部的导航栏高度：74px */
+  --nav-height: 74px;
+  
+}

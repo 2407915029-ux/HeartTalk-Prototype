@@ -1,0 +1,31 @@
+# Installed dependencies and generated production files / 已安装的依赖和生成的生产构建文件
+node_modules/
+dist/
+
+# Private environment files that may contain API keys / 可能包含 API 密钥的私有环境配置文件
+.env
+.env.local
+.env.*.local
+
+# Codex and local working artifacts / Codex 与本地工作过程文件
+.agents/
+.codex/
+tmp/
+work/
+output/
+outputs/
+qa_render_english/
+rendered_thesis_architecture/
+thesis_render_original/
+generated_figures/
+thesis_media/
+HeartTalk-Teacher-Demo-*/
+
+# Thesis and presentation files are submitted separately from the source code / 论文和演示文件与源代码分开提交
+*.docx
+*.pdf
+*.pptx
+tmp_thesis_text.txt
+
+# TypeScript incremental build metadata / TypeScript 增量构建元数据
+*.tsbuildinfo

@@ -1,0 +1,1168 @@
+/* 欢迎页整体布局 / Welcome page layout */
+.ht-shell.ht-onboarding {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 13px 34px;
+  background: #f3f1ff;
+}
+/* 欢迎页圆角 / Welcome page corners */
+.ht-shell.welcome-reference {
+  border-radius: 42px;
+}
+/* 欢迎页完整插画 / Welcome page illustration */
+.welcome-complete-image {
+  width: 363px;
+  max-width: 100%;
+  height: auto;
+}
+/* 欢迎页底部区域 / Welcome page footer */
+.ht-onboarding-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 欢迎页底部留白 / Welcome footer spacing */
+.welcome-reference .ht-onboarding-footer {
+  padding: 0 0 4px 34px;
+}
+/* 欢迎页进度点 / Welcome page dots */
+.welcome-reference .welcome-dots-asset {
+  width: 156px;
+}
+/* 欢迎页下一步按钮 / Welcome next button */
+.ht-round-next {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 下一步按钮图片 / Next button image */
+.welcome-reference .ht-round-next img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* 角色选择页背景 / Role selection background */
+.ht-role {
+  background: #fff;
+}
+/* 角色选择页说明图 / Role selection introduction */
+.ht-role-intro-image {
+  width: 334px;
+  height: 122px;
+  margin: 0 auto;
+  display: block;
+}
+/* 两个角色按钮的排列 / Role button layout */
+.ht-role-image-buttons {
+  display: grid;
+  gap: 12px;
+}
+/* 角色图片按钮 / Role image buttons */
+.ht-role-image-button {
+  width: 342px;
+  height: 94px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 角色按钮里的图片 / Images inside role buttons */
+.ht-role-image-button img {
+  width: 342px;
+  height: 94px;
+  display: block;
+}
+
+
+
+/* 老年端主页背景 / Older-adult home background */
+.ht-elder-home {
+  background: #fff9f5;
+}
+/* 主页小按钮排列 / Home card button layout */
+.ht-card-stack {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+/* 顶部问候图区域 / Greeting image area */
+.elder-home-greeting-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+/* 顶部问候图片 / Greeting image */
+.elder-home-greeting-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 330px;
+  height: auto;
+  display: block;
+}
+/* 主页图片按钮 / Home image buttons */
+.elder-home-image-button {
+  width: 100%;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 按钮里的图片 / Images inside buttons */
+.elder-home-image-button img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* 记忆页面背景 / Memories page background */
+.elder-memories-page {
+  background: #fff;
+}
+/* 记忆分类标题 / Memory category titles */
+.memory-section h2 {
+  font-size: 20px;
+  margin: 25px 2px 10px;
+}
+/* 记忆卡片 / Memory cards */
+.memory-card {
+  background: #fff;
+  border: 1px solid var(--elder-line-color);
+  border-radius: 22px;
+  padding: 16px;
+  margin: 10px 0;
+}
+/* 记忆内容 / Memory text */
+.memory-card p {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+/* 记忆来源和日期 / Memory source and date */
+.memory-card small {
+  color: var(--color-muted);
+}
+/* 权限和删除按钮排列 / Permission and delete layout */
+.memory-card>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+/* 顶部记忆问题图片 / Memory question image */
+.elder-memory-question-button {
+  display: block;
+  width: calc(100% + 18px);
+  margin: 0 0 0 -9px;
+}
+/* 顶部图片尺寸 / Question image size */
+.elder-memory-question-button img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* AI使用权限区域 / AI permission area */
+.elder-memory-permission {
+  position: relative;
+  display: block;
+  width: 153px;
+  height: 40px;
+  cursor: pointer;
+}
+/* 隐藏原生复选框 / Hide the native checkbox */
+.elder-memory-permission input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+/* 权限状态图片 / Permission state image */
+.elder-memory-permission img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 未允许状态图片 / Permission off image */
+.elder-memory-permission img[src*="permission-off"] {
+  width: 144px;
+}
+/* 已允许状态图片 / Permission on image */
+.elder-memory-permission img[src*="permission-on"] {
+  width: 153px;
+}
+/* 删除记忆按钮 / Delete memory button */
+.memory-card .elder-memory-actions {
+  display: block;
+  width: 30px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+/* 删除按钮图片 / Delete button image */
+.elder-memory-actions>img {
+  display: block;
+  width: 30px;
+  height: 34px;
+  object-fit: contain;
+}
+
+
+
+/* 老年端设置页背景 / Elder settings page background */
+.elder-profile-page {
+  background: #fff;
+}
+/* 设置列表图片 / Settings list image */
+.elder-settings-list-image {
+  display: block;
+  width: calc(100% + 15px);
+  margin-left: -7.5px;
+}
+/* 切换按钮上下间距 / Switch button spacing */
+.stack {
+  margin: 20px 0;
+}
+/* 切换角色图片按钮 / Switch role image button */
+.settings-switch-image-button {
+  display: block;
+  width: calc(100% + 16px);
+  height: 71px;
+  margin-left: -8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* 切换角色按钮图片 / Switch role button image */
+.settings-switch-image-button img {
+  display: block;
+  width: 100%;
+  height: 71px;
+  object-fit: cover;
+  object-position: center;
+}
+/* 隐私说明图片 / Privacy information image */
+.elder-settings-privacy-image {
+  display: block;
+  width: calc(100% + 3px);
+  margin-left: -1.5px;
+}
+
+
+
+/* 家人主页背景 / Family home background */
+.phone.family-home {
+  background: #fff8fa;
+}
+/* 话题和提醒按钮排列 / Topic and reminder layout */
+.family-action-feed {
+  display: grid;
+  margin-top: 10px;
+  gap: 25px;
+}
+/* 主页两张内容图片 / Home content images */
+.family-home-intro-complete,
+.family-home-support-complete {
+  display: block;
+  width: 100%;
+}
+/* 主页欢迎图片 / Home welcome image */
+.family-home-intro-complete {
+  width: 96%;
+  aspect-ratio: 690 / 510;
+  object-fit: contain;
+  margin: -16px auto 0;
+}
+/* 主页支持信息图片 / Home support image */
+.family-home-support-complete {
+  width: 108.25%;
+  margin: 2px 0 4px -4.125%;
+}
+/* 家人主页图片按钮 / Family home image buttons */
+.family-home-image-action {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 家人主页按钮图片 / Family home button images */
+.family-home-image-action img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* 消息按钮下方间距 / Message button spacing */
+.family-home-message-action {
+  margin-bottom: 14px;
+}
+
+
+
+/* 所有元素使用一致的宽高计算方式 / Use the same size calculation for every element */
+* {
+  box-sizing: border-box;
+}
+
+/* 浏览器页面基础样式 / Browser page base styles */
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 15%,#fff 0,#f2f0ff 42%,#f7f7fc 75%);
+  color: var(--color-text);
+  font-family: Nunito,system-ui,sans-serif;
+  min-height: 100vh;
+}
+/* 表单控件继承页面字体和颜色 / Form controls inherit the page font and color */
+button,input,select,textarea {
+  font: inherit;
+  color: inherit;
+}
+/* 公共手机页面布局 / Shared phone page layout */
+.phone {
+  width: var(--mobile-width);
+  min-height: 844px;
+  margin: 38px auto;
+  padding: 25px 22px 90px;
+  border-radius: 42px;
+  box-shadow: var(--shadow-phone);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 底部导航布局 / Bottom navigation layout */
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  border-top: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 底部导航占位 / Bottom navigation spacing */
+.nav-space {
+  height: 40px;
+}
+/* 表单内容纵向排列 / Stack form content vertically */
+.form {
+  display: grid;
+  gap: 18px;
+}
+/* 表单标题和控件排列 / Form label and control layout */
+.field {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+}
+/* 表单输入控件 / Form input controls */
+.field input,.field textarea {
+  width: 100%;
+  border: 1px solid #dedde7;
+  background: #fff;
+  padding: 14px;
+  outline: none;
+}
+/* 日期和时间并排排列 / Place date and time side by side */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+/* 多行输入框 / Multiline input */
+.field textarea {
+  resize: none;
+}
+/* 分类按钮排列 / Category button layout */
+.category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* 分类按钮 / Category buttons */
+.category-chips button {
+  border: 1px solid #e2e1eb;
+  background: #fff;
+  border-radius: 999px;
+  padding: 9px 15px;
+  color: #5c5c6d;
+  cursor: pointer;
+}
+/* 活动列表顶部距离 / Activity list top spacing */
+.timeline {
+  margin-top: 18px;
+}
+/* 每条活动记录 / Activity item */
+.timeline article {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  min-height: 90px;
+}
+/* 活动图标位置 / Activity icon position */
+.timeline article>span {
+  z-index: 1;
+  width: 46px;
+  height: 46px;
+}
+/* 活动标题和时间 / Activity title and time */
+.timeline article>div b,.timeline article>div small {
+  display: block;
+}
+/* 活动时间 / Activity time */
+.timeline article>div small {
+  color: var(--color-muted);
+  margin-top: 5px;
+}
+/* 活动之间的连接线 / Line between activities */
+.timeline article>i {
+  position: absolute;
+  left: 22px;
+  top: 46px;
+  width: 2px;
+  height: 44px;
+  background: #ddd9f5;
+}
+
+
+
+/* 家人个人页布局 / Family profile page layout */
+.family-profile-page {
+  background: #fff;
+  height: 844px;
+  min-height: 844px;
+  max-height: 844px;
+  overflow: hidden;
+  padding-bottom: 86px;
+}
+
+/* 家人个人资料图片 / Family profile image */
+.family-profile-panel-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* 家人个人页切换按钮位置 / Family profile role-button position */
+.family-profile-role-action {
+  margin-top: 18px;
+}
+/* 家人表单内容间距 / Family form content spacing */
+.family-simple-action {
+  gap: 16px;
+}
+/* 家人表单控件圆角 / Family form control corners */
+.field input,.field textarea {
+  border-radius: 18px;
+}
+/* 老人端公共页面布局 / Shared elder page layout */
+.ht-shell {
+  width: var(--mobile-width);
+  min-height: 844px;
+  margin: 38px auto;
+  padding: var(--space-page);
+  border-radius: var(--radius-phone);
+  box-shadow: var(--shadow-phone);
+  position: relative;
+  overflow: hidden;
+}
+.ht-shell.with-nav {
+  padding-bottom: calc(var(--nav-height) + 18px);
+}
+
+/* 公共页面标题栏 / Shared page header */
+.page-header {
+  min-height: 50px;
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  align-items: center;
+  margin-bottom: var(--space-section);
+}
+
+/* 公共页面标题文字 / Shared page title text */
+.page-header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: var(--font-title-md);
+  line-height: 1.15;
+  letter-spacing: -.25px;
+}
+
+
+
+/* 对话页面 / Talk page */
+.ht-talk-page {
+  background: #f7f5ff;
+  text-align: center;
+}
+/* 机器人插画 / Robot illustration */
+.talk-robot-complete {
+  width: 259px;
+  height: 215px;
+  display: block;
+  margin: 5px auto 0;
+}
+/* 对话状态图片 / Talk status image */
+.talk-status-image {
+  display: block;
+  margin: 4px auto 18px;
+}
+/* 正在听状态图片 / Listening status image */
+.talk-status-image.listening {
+  width: 197px;
+  height: 60px;
+}
+/* 正在说状态图片 / Speaking status image */
+.talk-status-image.speaking {
+  width: 182px;
+  height: 110px;
+}
+/* 对话记录列表 / Chat message list */
+.ht-chat-list {
+  display: grid;
+  gap: 14px;
+  text-align: left;
+  max-height: 292px;
+  overflow: auto;
+  padding: 0 0 2px;
+}
+/* 对话气泡 / Chat bubble */
+.ht-bubble {
+  border: 1px solid var(--elder-line-color);
+  border-radius: 22px;
+  padding: 16px 18px 15px;
+}
+/* 用户消息气泡 / User message bubble */
+.ht-bubble.you {
+  background: #fff;
+}
+/* HeartTalk消息气泡 / HeartTalk message bubble */
+.ht-bubble.ai {
+  background: #ddd9ff;
+}
+/* 消息发送者 / Message sender */
+.ht-bubble b {
+  font-size: 13px;
+  color: var(--color-primary);
+}
+/* 消息正文 / Message text */
+.ht-bubble p {
+  font-size: 16px;
+  line-height: 1.45;
+  margin: 9px 0 12px;
+}
+/* 消息时间 / Message time */
+.ht-bubble small {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+/* 麦克风、输入框和发送按钮 / Microphone, input and send button */
+.fallback-input {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 10px;
+}
+/* 对话输入框 / Talk input */
+.fallback-input input {
+  min-width: 0;
+  flex: 1;
+  padding: 12px 13px;
+  border: 1px solid var(--elder-line-color);
+  border-radius: 17px;
+  background: #fff;
+  outline: none;
+}
+/* 麦克风和发送图片按钮 / Microphone and send image buttons */
+.fallback-input .talk-square-image-button {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 麦克风和发送按钮图片 / Microphone and send button images */
+.fallback-input .talk-square-image-button img {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+/* 语音控制按钮排列 / Voice control button layout */
+.ht-voice-controls {
+  display: flex;
+  gap: 12px;
+}
+/* 语音控制图片按钮 / Voice control image buttons */
+.ht-voice-controls .talk-control-image-button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  height: 82px;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+/* 语音控制按钮图片 / Voice control button images */
+.ht-voice-controls .talk-control-image-button img {
+  width: 100%;
+  height: 82px;
+  display: block;
+}
+
+
+
+/* 话题表单内容间距 / Topic form content spacing */
+.topic-form .family-simple-action {
+  gap: 14px;
+}
+/* 话题页面插画区域 / Topic illustration area */
+.topic-form .family-topic-illustration {
+  margin: -4px 0 -2px;
+}
+/* 话题页面插画 / Topic illustration */
+.topic-form .family-topic-illustration img {
+  width: 100%;
+  display: block;
+}
+/* 话题字段 / Topic fields */
+.topic-form .field {
+  gap: 7px;
+  font-size: 14px;
+}
+/* 话题标题输入框 / Topic title input */
+.topic-form .field input {
+  min-height: 48px;
+  border-radius: 17px;
+  padding: 13px 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* 话题备注容器 / Topic note container */
+.topic-form .topic-note-wrap {
+  position: relative;
+}
+/* 话题备注输入框 / Topic note input */
+.topic-form .topic-note-wrap textarea {
+  min-height: 112px;
+  border-radius: 17px;
+  padding: 13px 15px 28px;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+/* 话题备注字数 / Topic note character count */
+.topic-form .topic-note-wrap>span {
+  position: absolute;
+  right: 14px;
+  bottom: 11px;
+  color: #8a899b;
+  font-size: 12px;
+  font-weight: 600;
+}
+/* 推荐分类标题 / Suggested category title */
+.topic-form .family-category-block>b {
+  display: block;
+  margin: 0 0 9px;
+  font-size: 14px;
+}
+/* 推荐分类排列 / Suggested category layout */
+.topic-form .category-chips {
+  gap: 9px;
+}
+/* 推荐分类按钮 / Suggested category buttons */
+.topic-form .category-chips button {
+  padding: 8px 14px;
+  font-size: 12.5px;
+}
+/* 选中的推荐分类 / Selected suggested category */
+.topic-form .category-chips button.active {
+  background: linear-gradient(135deg,#6966df,#5354b8);
+  border-color: transparent;
+  color: #fff;
+}
+
+
+
+/* 双方消息页面 / Shared message page */
+.message-thread-page {
+  display: flex;
+  flex-direction: column;
+  height: 844px;
+  padding-bottom: 86px;
+  overflow: hidden;
+}
+/* 老人端消息背景 / Elder message background */
+.elder-message-thread {
+  background: #f7f5ff;
+}
+/* 家人端消息背景 / Family message background */
+.family-message-thread {
+  background: #fff8fa;
+}
+/* 消息页标题区域 / Message page header */
+.message-thread-page .page-header {
+  margin-bottom: 4px;
+}
+/* 消息页标题 / Message page title */
+.message-thread-page .page-header h1 {
+  width: 100%;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  text-align: center;
+}
+/* 消息列表 / Message list */
+.message-thread-list {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 3px 2px 10px;
+}
+/* 消息卡片 / Message bubble */
+.message-thread-bubble {
+  width: 290px;
+  padding: 18px 19px;
+  border: 1px solid #f0f0f2;
+  border-radius: 24px;
+  background: #fff;
+  overflow-wrap: anywhere;
+}
+/* 收到的消息靠左 / Received message alignment */
+.message-thread-bubble.received {
+  justify-self: start;
+}
+/* 发出的消息靠右 / Sent message alignment */
+.message-thread-bubble.sent {
+  justify-self: end;
+}
+/* 最新消息卡片 / Latest message bubble */
+.message-thread-bubble.latest-message {
+  width: 304px;
+  padding: 19px 18px 17px;
+}
+/* 老人发出的最新消息 / Latest elder message */
+.message-thread-bubble.latest-pink {
+  background: #fbdfe7;
+}
+/* 家人发出的最新消息 / Latest family message */
+.message-thread-bubble.latest-blue {
+  background: #e5e5ff;
+}
+/* 家人端最新消息标签 / Family latest-message label */
+.latest-message-label {
+  display: inline-block;
+  margin: 0 0 9px;
+  padding: 5px 10px;
+  border: 1px solid #f0f0f2;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 800;
+}
+/* 粉色卡片标签 / Pink bubble label */
+.message-thread-bubble.latest-pink .latest-message-label {
+  color: #c34f73;
+}
+/* 紫色卡片标签 / Purple bubble label */
+.message-thread-bubble.latest-blue .latest-message-label {
+  color: #5452b8;
+}
+/* 粉色卡片姓名 / Pink bubble name */
+.message-thread-bubble.latest-pink b {
+  color: #a93f65;
+}
+/* 紫色卡片姓名 / Purple bubble name */
+.message-thread-bubble.latest-blue b {
+  color: #4f4dae;
+}
+/* 消息发送者姓名 / Message sender name */
+.message-thread-bubble b {
+  display: block;
+  margin-bottom: 7px;
+  color: #5452b8;
+  font-size: 16px;
+}
+/* 消息正文 / Message text */
+.message-thread-bubble p {
+  margin: 0;
+  color: #222235;
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* 消息时间 / Message time */
+.message-thread-bubble small {
+  display: block;
+  margin-top: 9px;
+  color: #7b7a8e;
+  font-size: 12px;
+  text-align: right;
+}
+/* 回复区域 / Reply area */
+.message-reply-form {
+  flex: 0 0 auto;
+  margin-top: 12px;
+}
+/* 输入框和发送按钮排列 / Input and send-button layout */
+.message-reply-form>div {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 54px;
+  gap: 9px;
+}
+/* 消息输入框 / Message input */
+.message-reply-form input {
+  min-width: 0;
+  height: 54px;
+  padding: 0 15px;
+  border: 1px solid #f0f0f2;
+  border-radius: 18px;
+  background: #fff;
+  color: #222235;
+  font-size: 17px;
+  outline: none;
+}
+/* 输入框聚焦状态保持不变 / Keep focused input unchanged */
+.message-reply-form input:focus {
+  border-color: #f0f0f2;
+}
+/* 发送图片按钮 / Image send button */
+.message-send-image-button {
+  width: 54px;
+  height: 54px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 禁用的发送按钮 / Disabled send button */
+.message-send-image-button:disabled {
+  cursor: not-allowed;
+}
+/* 发送按钮图片 / Send button image */
+.message-send-image-button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.42);
+}
+/* 老人端最新消息标题图片 / Elder latest-message heading image */
+.elder-latest-message-heading {
+  display: block;
+  margin: 0 0 7px -20px;
+}
+/* 老人端紫色标题图片宽度 / Elder purple heading width */
+.elder-message-thread .latest-blue .elder-latest-message-heading {
+  width: 130px;
+}
+/* 老人端粉色标题图片宽度 / Elder pink heading width */
+.elder-message-thread .latest-pink .elder-latest-message-heading {
+  width: 129px;
+}
+
+
+
+/* 老年端提醒页 / Older-adult reminder page */
+.elder-reminders-page {
+  background: #fff7df;
+  padding-bottom: 104px;
+}
+/* 提醒页标题 / Reminder page title */
+.elder-reminders-page .page-header h1 {
+  width: 100%;
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+}
+/* 提醒详情卡片 / Reminder detail card */
+.elder-reminder-detail {
+  margin-top: 18px;
+  padding: 25px 22px;
+  border-radius: 28px;
+  border: 1px solid var(--elder-line-color);
+  background: #ffedbf;
+}
+/* 提醒标题 / Reminder title */
+.elder-reminder-detail h2 {
+  margin: 0;
+  color: #252438;
+  font-size: 28px;
+  line-height: 1.2;
+}
+/* 提醒信息列表 / Reminder information list */
+.elder-reminder-detail dl {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0;
+}
+/* 提醒信息行 / Reminder information row */
+.elder-reminder-detail dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--elder-line-color);
+  background: #fffaf0;
+}
+/* 信息名称 / Information labels */
+.elder-reminder-detail dt {
+  color: #757287;
+  font-weight: 700;
+}
+/* 信息内容 / Information values */
+.elder-reminder-detail dd {
+  margin: 0;
+  color: #29283a;
+  font-weight: 800;
+  text-align: right;
+}
+/* 完成提醒按钮 / Complete reminder button */
+.elder-reminder-image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 已完成的按钮 / Completed button */
+.elder-reminder-image-button:disabled {
+  cursor: default;
+}
+/* 完成按钮图片 / Complete button image */
+.elder-reminder-image-button img {
+  display: block;
+  width: 100%;
+  height: 58px;
+  object-fit: cover;
+  object-position: center;
+}
+/* 最新提醒卡片 / Latest reminder card */
+.family-reminder-status {
+  padding: 16px;
+  border: 1px solid #cee9da;
+  border-radius: 22px;
+  background: #effaf4;
+}
+/* 最新提醒的说明和标题 / Latest reminder description and title */
+.family-reminder-status small,.family-reminder-status b {
+  display: block;
+}
+/* 最新提醒说明 / Latest reminder description */
+.family-reminder-status small {
+  margin-bottom: 3px;
+  color: #797384;
+  font-size: 12px;
+}
+/* 最新提醒标题 / Latest reminder title */
+.family-reminder-status b {
+  color: #27263a;
+  font-size: 16px;
+  line-height: 1.3;
+}
+/* 最新提醒时间 / Latest reminder time */
+.family-reminder-status p {
+  margin: 10px 0 0;
+  color: #656275;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* 老人端导航点击区域 / Elder navigation links */
+.elder-bottom-nav a {
+  position: relative;
+  display: block;
+  width: 76px;
+  height: var(--nav-height);
+  padding: 0;
+  overflow: hidden;
+}
+/* 老人端导航图片 / Elder navigation images */
+.elder-bottom-nav .elder-nav-image {
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 13px;
+  width: 68px;
+  height: 49px;
+}
+/* 老人端设置和记忆页标题居中 / Center elder settings and memories titles */
+.elder-memories-page .page-header h1,
+.elder-profile-page .page-header h1 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+/* 家人端导航点击区域 / Family navigation links */
+.bottom-nav:not(.elder-bottom-nav) a {
+  position: relative;
+  display: block;
+  width: 76px;
+  height: var(--nav-height);
+  padding: 0;
+  overflow: hidden;
+}
+/* 家人端导航图片 / Family navigation images */
+.bottom-nav:not(.elder-bottom-nav) .family-nav-image {
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 13px;
+  width: 68px;
+  height: 49px;
+  object-fit: contain;
+}
+/* 活动图标图片 / Activity icon image */
+.family-activity-icon {
+  width: 46px;
+  height: 46px;
+}
+/* 保存话题图片按钮 / Save-topic image button */
+.family-save-topic-image-button {
+  width: 100%;
+  min-height: 58px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 禁用的保存话题按钮 / Disabled save-topic button */
+.family-save-topic-image-button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+/* 保存话题按钮图片 / Save-topic button image */
+.family-save-topic-image-button img {
+  display: block;
+  width: 100%;
+}
+/* 老人端页面使用统一边框并取消外框阴影 / Elder pages share one border color and no frame shadow */
+.ht-elder-home,
+.ht-talk-page,
+.elder-message-thread,
+.elder-reminders-page,
+.elder-memories-page,
+.elder-profile-page {
+  --elder-line-color: #f0f0f2;
+  box-shadow: none;
+}
+
+/* 老人设置和记忆页底部导航 / Elder settings and memories bottom navigation */
+.elder-memories-page .bottom-nav,
+.elder-profile-page .bottom-nav {
+  border-top: 1px solid var(--elder-line-color);
+  background: #fff;
+}
+
+/* 家人端页面使用浅粉纯色背景 / Family pages use a solid pale-pink background */
+.topic-form,
+.reminder-form,
+.family-activity-page {
+  background: #fff8fa;
+}
+
+/* 话题页标题栏 / Topic page header */
+.topic-form .page-header {
+  min-height: 58px;
+  margin-bottom: 16px;
+}
+/* 家人端导航外观 / Family navigation appearance */
+.bottom-nav:not(.elder-bottom-nav) {
+  border-top: 1px solid #e5e5e8;
+  background: #fff;
+}
+
+/* 提醒状态图片 / Reminder status image */
+.family-reminder-status-label-image {
+  display: block;
+  height: 29px;
+  margin-top: 12px;
+}
+/* 保存提醒图片按钮 / Save-reminder image button */
+.family-save-reminder-image-button {
+  width: 100%;
+  min-height: 58px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* 禁用的保存提醒按钮 / Disabled save-reminder button */
+.family-save-reminder-image-button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+/* 保存提醒按钮图片 / Save-reminder button image */
+.family-save-reminder-image-button img {
+  display: block;
+  width: 100%;
+}
+/* 日期和时间输入框 / Date and time inputs */
+.family-date-grid input[type='date'],
+.family-date-grid input[type='time'] {
+  padding-right: 12px;
+}
+
+/* 返回按钮只显示用户提供的图片 / Back button only shows the supplied image */
+.page-header .icon-btn.back-icon-button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  overflow: hidden;
+  appearance: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+/* 返回按钮图片 / Back-button image */
+.ht-back-icon-image {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  clip-path: circle(49% at 50% 50%);
+  object-fit: contain;
+}
+
+/* 家人端个人页采用与老人端设置页一致的三列居中标题栏。 */
+.family-profile-page .page-header {
+  display: grid;
+  grid-template-columns: 48px minmax(0,1fr) 48px;
+  min-height: 58px;
+  margin-bottom: 8px;
+}
+/* 家人个人页标题 / Family profile title */
+.family-profile-page .page-header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 23px;
+  line-height: 1.15;
+}
